@@ -1,0 +1,14 @@
+﻿
+
+@using Microsoft.AspNetCore.Http;
+
+@{
+    ViewData["Title"] = "Privacy Policy";
+    string fullname = Context.Session.GetString("email");
+}
+
+
+<div class="text-center">
+    <h1 class="display-4">Welcome @fullname</h1>
+
+</div>
